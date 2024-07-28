@@ -1,0 +1,29 @@
+app.html:
+  Make html frontend for the todo API in raw html, js, css and tailwind. Make it look matrix-style. Ensure the cards of the app itself are readable. Use the authToken from localStorage. Ensure to redirect to '/' if no authToken is present in localStorage.
+
+  I want the user to manage their todos here.
+
+  - create new todos. prefil the date to now
+  - remove a todo
+  - list all todos
+
+  Ensure to use loading indicators for all apis loading.
+  Also, add a logout button that will delete localStorage authToken and redirect to '/'
+
+index.html: I've made `app.html`. Now make me a similar `index.html` that is the landing page that has the same style and is more sales-like.. Ensure the CTA leads to `login.html`
+
+login.html:
+  Please make a nice login page in HTML, CSS, JS and Tailwind CDN. Consider the style of my index.html page and make it similar
+
+  Start with a loading indicator indicator.
+
+  - If a '?code' parameter is received, submit it to {auth_server}/client/exchangeCode . If it fails, render the error. If it succeeds, set the access_token to localStorage:authToken, and redirect to {redirect_page}
+
+  - If not, and if you have no authToken, redirect to {auth_server}/client/authorize?client_id={client_id}
+
+  - If you already have an authToken, redirect to {redirect_page}
+
+  Variables...
+  - {auth_server} = https://auth.actionschema.com
+  - {redirect_page} = app.html
+  - {client_id} = KWaQRgTRPtXJuIWt
