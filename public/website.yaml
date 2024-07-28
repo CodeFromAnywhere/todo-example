@@ -17,7 +17,7 @@ login.html:
 
   Start with a loading indicator indicator.
 
-  - If a '?code' parameter is received, submit it to {auth_server}/client/exchangeCode . If it fails, render the error. If it succeeds, set the access_token to localStorage:authToken, and redirect to {redirect_page}
+  - If a '?code' parameter is received, submit it to {auth_server}/client/exchangeCode (use FormData). If it fails, render the error. If it succeeds, set the access_token to localStorage:authToken, and redirect to {redirect_page}
 
   - If not, and if you have no authToken, redirect to {auth_server}/client/authorize?client_id={client_id}
 
